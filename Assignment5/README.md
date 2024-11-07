@@ -7,6 +7,11 @@
 * `pip install pytest-mock`
 * `pip install httpx`
 * `pip install cryptography`
+### Copy the database template file and add your SQL server password
+```sh
+$ cp api/dependencies/config.py.template api/dependencies/config.py
+$ edit api/dependencies/config.py
+```
 ### Run the server:
 `uvicorn api.main:app --reload`
 ### Test API by built-in docs:
